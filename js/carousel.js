@@ -7,15 +7,15 @@ document.addEventListener('DOMContentLoaded', () => {
     const mainImg = document.querySelector('.carousel-main img');
     const zoomLens = document.querySelector('.zoom-lens');
     const zoomPreview = document.querySelector('.zoom-preview');
-    
+
     if (carouselMain && mainImg && zoomLens && zoomPreview) {
         // We set the background image of the preview to be same as the main image
-        
+
         carouselMain.addEventListener('mouseenter', () => {
             zoomPreview.style.backgroundImage = `url(${mainImg.src})`;
             // Zoom level calculation: scale factor
             // For example, if preview box is 100% size, and background size is 200%, it's a 2x zoom.
-            zoomPreview.style.backgroundSize = `${mainImg.width * 2}px ${mainImg.height * 2}px`;
+            zoomPreview.style.backgroundSize = `${mainImg.width * 3.5}px ${mainImg.height * 3.5}px`;
             carouselMain.classList.add('is-zooming');
         });
 
@@ -34,12 +34,12 @@ document.addEventListener('DOMContentLoaded', () => {
             const lensHeight = zoomLens.offsetHeight;
 
             // Prevent lens from leaving image boundaries
-            x = Math.max(lensWidth/2, Math.min(x, rect.width - lensWidth/2));
-            y = Math.max(lensHeight/2, Math.min(y, rect.height - lensHeight/2));
+            x = Math.max(lensWidth / 2, Math.min(x, rect.width - lensWidth / 2));
+            y = Math.max(lensHeight / 2, Math.min(y, rect.height - lensHeight / 2));
 
             // Position the lens
-            zoomLens.style.left = `${x - lensWidth/2}px`;
-            zoomLens.style.top = `${y - lensHeight/2}px`;
+            zoomLens.style.left = `${x - lensWidth / 2}px`;
+            zoomLens.style.top = `${y - lensHeight / 2}px`;
 
             // Position the background preview
             // Calculate ratios to map lens position to background position
@@ -53,7 +53,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // 2. Carousel Switching Logic
     const thumbnails = document.querySelectorAll('.carousel-thumb');
-    
+
     if (thumbnails.length > 0 && mainImg) {
         thumbnails.forEach(thumb => {
             thumb.addEventListener('click', () => {
@@ -63,9 +63,9 @@ document.addEventListener('DOMContentLoaded', () => {
                 thumb.classList.add('active');
                 // Change main image src
                 mainImg.src = thumb.src;
-                
+
                 // Update zoom preview as well
-                if(zoomPreview) {
+                if (zoomPreview) {
                     zoomPreview.style.backgroundImage = `url(${mainImg.src})`;
                 }
             });

@@ -11,13 +11,26 @@ body {
   font-family: var(--font-secondary);
   color: var(--color-secondary);
   line-height: 1.5;
-  background-color: var(--color-white);
+  background-color: #F3F4F6; /* Slightly grey background for the body to show the page shadow */
   overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
   scroll-behavior: smooth;
 }
 
-h1, h2, h3, h4, h5, h6 {
+.page-container {
+  width: 100%;
+  max-width: var(--container-lg);
+  margin: 0 auto;
+  background-color: var(--color-white);
+  box-shadow: 0px 16px 32px -12px #585C5F1A;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: var(--font-primary);
   color: var(--color-primary);
   font-weight: 700;
@@ -28,8 +41,17 @@ h1 {
   font-size: 56px;
 }
 
-@media (max-width: 1200px) { h1 { font-size: 48px; } }
-@media (max-width: 800px) { h1 { font-size: 36px; } }
+@media (max-width: 1200px) {
+  h1 {
+    font-size: 48px;
+  }
+}
+
+@media (max-width: 800px) {
+  h1 {
+    font-size: 36px;
+  }
+}
 
 h2 {
   font-size: 40px;
@@ -49,15 +71,35 @@ a {
 /* Container Structure */
 .container {
   width: 100%;
-  max-width: var(--container-lg); /* 1440px */
+  max-width: var(--container-lg);
+  /* 1440px */
   margin: 0 auto;
   padding: 0 var(--space-md);
 }
 
-@media (max-width: 1600px) { .container { max-width: var(--container-md); } }
-@media (max-width: 1200px) { .container { max-width: var(--container-sm); } }
-@media (max-width: 1080px) { .container { max-width: var(--container-xs); } }
-@media (max-width: 800px) { .container { max-width: var(--container-xxs); } }
+@media (max-width: 1680px) {
+  .container {
+    max-width: var(--container-md);
+  }
+}
+
+@media (max-width: 1200px) {
+  .container {
+    max-width: var(--container-sm);
+  }
+}
+
+@media (max-width: 1080px) {
+  .container {
+    max-width: var(--container-xs);
+  }
+}
+
+@media (max-width: 800px) {
+  .container {
+    max-width: var(--container-xxs);
+  }
+}
 
 /* Section Spacing */
 .section-padding {
@@ -86,7 +128,7 @@ a {
 }
 
 .btn-primary {
-  background: linear-gradient(135deg, var(--color-accent) 0%, var(--color-accent-hover) 100%);
+  background: #2B3990;
   color: var(--color-white);
   box-shadow: 0 4px 14px rgba(46, 67, 146, 0.3);
 }
@@ -135,11 +177,23 @@ a {
 
 /* Micro-animations */
 @keyframes fadeIn {
-  from { opacity: 0; }
-  to { opacity: 1; }
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
 }
 
 @keyframes slideUp {
-  from { opacity: 0; transform: translateY(20px); }
-  to { opacity: 1; transform: translateY(0); }
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }

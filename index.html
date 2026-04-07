@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
+    <div class="page-container">
     <header class="site-header">
         <div class="container header-container">
             <div class="logo"><img src="assets/company-logo.png" alt="Mangalam Pipes"></div>
@@ -34,11 +34,15 @@
             <div class="carousel-container">
                 <div class="carousel-main">
                     <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=800&q=80" alt="Main Product Image">
-                    <div class="zoom-lens"></div>
-                    <div class="zoom-preview"></div>
+                    <div class="zoom-lens">
+                        <div class="zoom-icon-wrapper">
+                            <img src="assets/zoom-in.svg" alt="Zoom In" class="zoom-icon">
+                        </div>
+                    </div>
                     <button class="carousel-arrow prev"><</button>
                     <button class="carousel-arrow next">></button>
                 </div>
+                <div class="zoom-preview"></div>
                 <div class="carousel-thumbs">
                     <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=100&q=80" alt="Thumb 1" class="carousel-thumb active">
                     <img src="https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?w=100&q=80" alt="Thumb 1" class="carousel-thumb">
@@ -48,9 +52,9 @@
 
             <div class="product-info">
                 <div class="badges">
-                    <span class="badge"><img src="assets/bis-logo.png" alt="BIS" style="height:20px; margin-right:4px;"> BIS Certified</span>
-                    <span class="badge"><img src="assets/isi-mark.svg" alt="ISI" style="height:20px; margin-right:4px;"> ISI Certified</span>
-                    <span class="badge"><img src="assets/ce-mark.png" alt="CE" style="height:20px; margin-right:4px;"> CE Certified</span>
+                    <span class="badge"><img src="assets/bis-logo.png" alt="BIS"> BIS Certified</span>
+                    <span class="badge"><img src="assets/isi-mark.svg" alt="ISI"> ISI Certified</span>
+                    <span class="badge"><img src="assets/ce-mark.png" alt="CE"> CE Certified</span>
                 </div>
                 <h1>Premium HDPE Pipes & Coils for Modern Infrastructure</h1>
                 <ul class="product-features">
@@ -60,11 +64,14 @@
                     <li>Flexible Installation</li>
                 </ul>
                 <div class="price-box">
-                    <p class="tag">Price Range</p>
+                    <p class="price-label">Price Range</p>
                     <div class="price-target">₹4,80,000 - 7,90,000</div>
                     <div class="price-tags">
                         <span class="tag">Shipping: 6-12 days</span>
                         <span class="tag">Returns: If returned within 7 days</span>
+                    </div>
+                    <div class="price-certifications">
+                        Certifications: ISO Certified, BIS Certified
                     </div>
                 </div>
                 <div class="product-actions">
@@ -123,6 +130,7 @@
         </div>
     </footer>
 
+    </div><!-- .page-container -->
     <!-- Section Templates (Global Scope) -->
     <script src="js/sections/partners.js"></script>
     <script src="js/sections/specs.js"></script>
