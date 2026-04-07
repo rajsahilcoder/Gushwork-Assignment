@@ -1,18 +1,93 @@
 /* Technical Specifications Table */
+.specs-section {
+  background: var(--Colors-Secondary-500-main, #111827);
+  padding: var(--space-3xl) 0;
+  color: #fff;
+}
+
+.specs-section .section-header h2 {
+    color: #fff;
+}
+
+.specs-section .section-header p {
+    color: #9CA3AF;
+}
+
+.specs-table-container {
+    background: #1F2937;
+    border-radius: var(--border-radius-lg);
+    overflow: hidden;
+    margin-top: var(--space-xl);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
 .specs-table {
   width: 100%;
   border-collapse: collapse;
-  margin-bottom: var(--space-lg);
 }
 
 .specs-table th, .specs-table td {
-  padding: var(--space-md);
+  padding: 1.25rem 1.5rem;
   text-align: left;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  font-size: 14px;
+}
+
+.specs-table thead tr {
+  background: #374151;
 }
 
 .specs-table th {
-  color: #9ca3af;
+  color: #9CA3AF;
   font-weight: 500;
-  width: 40%;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-size: 12px;
+}
+
+.specs-table tbody tr {
+  background: #1F2937;
+  transition: background 0.2s ease;
+}
+
+.specs-table tbody tr:hover {
+  background: #252F3F;
+}
+
+.specs-table td {
+  color: #E5E7EB;
+}
+
+.specs-table td:first-child {
+    font-weight: 500;
+    width: 40%;
+}
+
+.flag-icon {
+    margin-right: 8px;
+}
+
+.specs-actions {
+    display: flex;
+    justify-content: center;
+    margin-top: var(--space-2xl);
+}
+
+.btn-download {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: #fff;
+    padding: 12px 24px;
+    border-radius: var(--border-radius-md);
+    font-weight: 500;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.btn-download:hover {
+    background: rgba(255, 255, 255, 0.05);
+    border-color: #fff;
 }
