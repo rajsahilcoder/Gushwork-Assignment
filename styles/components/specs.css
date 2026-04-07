@@ -1,0 +1,18 @@
+/* Technical Specifications Table */
+.specs-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: var(--space-lg);
+}
+
+.specs-table th, .specs-table td {
+  padding: var(--space-md);
+  text-align: left;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.specs-table th {
+  color: #9ca3af;
+  font-weight: 500;
+  width: 40%;
+}

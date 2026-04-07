@@ -1,2 +1,23 @@
-Wed Dev Assignment.pdf
+# System Files
 .DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Assignment Original Files to ignore (Optional)
+Wed Dev Assignment.pdf
+
+# Generated temp directories
+temp_images/
+
+# Editor directories and files
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+temp/

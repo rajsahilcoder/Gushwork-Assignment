@@ -1,0 +1,86 @@
+/* Tabs & Manufacturing Process */
+.tabs-container {
+  margin-top: var(--space-xl);
+}
+
+.tabs-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: var(--space-sm);
+  margin-bottom: var(--space-2xl);
+  border: 1px solid var(--color-border);
+  padding: 8px;
+  border-radius: var(--border-radius-full);
+  background: var(--color-white);
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.tab-btn {
+  padding: 8px 24px;
+  border: none;
+  background: transparent;
+  border-radius: var(--border-radius-full);
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  color: var(--color-text-muted);
+}
+
+.tab-btn.active {
+  background: var(--color-accent);
+  color: var(--color-white);
+}
+
+.tab-content {
+  display: none;
+}
+
+.tab-content.active {
+  display: block;
+}
+
+.tab-inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-2xl);
+  align-items: center;
+  background: var(--color-white);
+  padding: var(--space-2xl);
+  border-radius: var(--border-radius-lg);
+  border: 1px solid var(--color-border);
+}
+
+@media (max-width: 800px) {
+  .tab-inner { grid-template-columns: 1fr; gap: var(--space-lg); padding: var(--space-lg); }
+}
+
+.tab-text h3 {
+  margin-bottom: var(--space-md);
+  font-size: 28px;
+}
+
+.tab-text p {
+  margin-bottom: var(--space-lg);
+}
+
+.tab-image {
+  position: relative;
+  border-radius: var(--border-radius-md);
+  overflow: hidden;
+}
+
+.tab-image img {
+  width: 100%;
+  display: block;
+}
+
+.tab-nav {
+  position: absolute;
+  bottom: var(--space-md);
+  left: var(--space-md);
+  display: flex;
+  gap: var(--space-sm);
+}

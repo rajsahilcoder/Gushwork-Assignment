@@ -3,11 +3,145 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gushwork Assignment</title>
+    <title>Mangalam Pipes | Premium HDPE Pipes & Coils</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Hello World</h1>
-    <script src="script.js"></script>
+
+    <header class="site-header">
+        <div class="container header-container">
+            <div class="logo"><img src="assets/company-logo.png" alt="Mangalam Pipes"></div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#" class="active">Products ⌄</a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <button class="btn btn-primary">Contact Us</button>
+                <button class="mobile-menu-btn">☰</button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container breadcrumb">
+            Products > Two For One Twister
+        </div>
+
+        <!-- Hero Section -->
+        <section class="container hero-section section-padding">
+            <div class="carousel-container">
+                <div class="carousel-main">
+                    <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=800&q=80" alt="Main Product Image">
+                    <div class="zoom-lens"></div>
+                    <div class="zoom-preview"></div>
+                    <button class="carousel-arrow prev"><</button>
+                    <button class="carousel-arrow next">></button>
+                </div>
+                <div class="carousel-thumbs">
+                    <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=100&q=80" alt="Thumb 1" class="carousel-thumb active">
+                    <img src="https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?w=100&q=80" alt="Thumb 1" class="carousel-thumb">
+                    <img src="https://images.unsplash.com/photo-1531688626620-14e3e3bdf8ac?w=100&q=80" alt="Thumb 1" class="carousel-thumb">
+                </div>
+            </div>
+
+            <div class="product-info">
+                <div class="badges">
+                    <span class="badge"><img src="assets/bis-logo.png" alt="BIS" style="height:20px; margin-right:4px;"> BIS Certified</span>
+                    <span class="badge"><img src="assets/isi-mark.svg" alt="ISI" style="height:20px; margin-right:4px;"> ISI Certified</span>
+                    <span class="badge"><img src="assets/ce-mark.png" alt="CE" style="height:20px; margin-right:4px;"> CE Certified</span>
+                </div>
+                <h1>Premium HDPE Pipes & Coils for Modern Infrastructure</h1>
+                <ul class="product-features">
+                    <li>Leak-Proof Fusion Joints</li>
+                    <li>Chemical Resistance</li>
+                    <li>50+ Year Service Life</li>
+                    <li>Flexible Installation</li>
+                </ul>
+                <div class="price-box">
+                    <p class="tag">Price Range</p>
+                    <div class="price-target">₹4,80,000 - 7,90,000</div>
+                    <div class="price-tags">
+                        <span class="tag">Shipping: 6-12 days</span>
+                        <span class="tag">Returns: If returned within 7 days</span>
+                    </div>
+                </div>
+                <div class="product-actions">
+                    <button class="btn btn-primary">Get Custom Quote</button>
+                    <button class="btn btn-outline">View Technical Specs ></button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Dynamic Injection Containers -->
+        <div id="partners-inject"></div>
+        <div id="specs-inject"></div>
+        <div id="features-inject"></div>
+        <div id="industries-inject"></div>
+        <div id="manufacturing-inject"></div>
+        <div id="testimonials-inject"></div>
+        <div id="portfolio-inject"></div>
+        <div id="resources-inject"></div>
+        <div id="faq-inject"></div>
+        <div id="cta-inject"></div>
+
+    </main>
+
+    <footer class="site-footer section-padding">
+        <div class="container">
+            <div class="footer-top">
+                <div class="logo"><img src="assets/company-logo.png" alt="Mangalam Pipes"></div>
+                <p>Premium HDPE Pipes & Fittings Manufacturer in South India</p>
+            </div>
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <h4>About Us</h4>
+                    <ul><li><a href="#">Company Profile</a></li></ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Categories</h4>
+                    <ul><li><a href="#">Packaging Industry Solutions</a></li></ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Products</h4>
+                    <ul><li><a href="#">Two For One Twister</a></li></ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Contact</h4>
+                    <p>2120, Road No. 2 GIDC Sachin, Surat - 394 230</p>
+                    <p>+91-XXX-XXX-XXXX</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Mangalam Pipes. All Rights Reserved.</p>
+                <div class="footer-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Section Templates (Global Scope) -->
+    <script src="js/sections/partners.js"></script>
+    <script src="js/sections/specs.js"></script>
+    <script src="js/sections/features.js"></script>
+    <script src="js/sections/industries.js"></script>
+    <script src="js/sections/manufacturing.js"></script>
+    <script src="js/sections/testimonials.js"></script>
+    <script src="js/sections/portfolio.js"></script>
+    <script src="js/sections/resources.js"></script>
+    <script src="js/sections/faq.js"></script>
+    <script src="js/sections/cta.js"></script>
+
+    <!-- Core Logic -->
+    <script src="js/renderer.js"></script>
+    <script src="js/header.js"></script>
+    <script src="js/carousel.js"></script>
+    <script src="js/industries.js"></script>
+    <script src="js/accordion.js"></script>
+    <script src="js/tabs.js"></script>
+    <script src="js/testimonials.js"></script>
 </body>
 </html>

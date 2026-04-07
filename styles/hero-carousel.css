@@ -1,0 +1,209 @@
+/* Breadcrumb */
+.breadcrumb {
+  padding: 100px 0 var(--space-md); /* Account for absolute header */
+  color: var(--color-text-muted);
+  font-size: 14px;
+}
+
+/* Hero Section Layout */
+.hero-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-2xl);
+  align-items: flex-start;
+}
+
+@media (max-width: 1080px) {
+  .hero-section {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Interactive Image Carousel with Zoom */
+.carousel-container {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+  position: relative;
+}
+
+/* Main Image Wrapper */
+.carousel-main {
+  width: 100%;
+  aspect-ratio: 4/4;
+  border-radius: var(--border-radius-lg);
+  overflow: hidden;
+  position: relative;
+  background-color: var(--color-light-bg);
+}
+
+.carousel-main img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  cursor: crosshair;
+}
+
+/* The Zoom Lens (Hover Box) */
+.zoom-lens {
+  position: absolute;
+  border: 1px solid #d4d4d4;
+  width: 150px;
+  height: 150px;
+  background-color: rgba(255, 255, 255, 0.4);
+  cursor: crosshair;
+  display: none;
+  pointer-events: none; /* don't block mouse events on image */
+}
+
+/* The Zoomed Preview Panel */
+.zoom-preview {
+  position: absolute;
+  top: 0;
+  left: calc(100% + var(--space-md));
+  width: 100%;
+  height: 100%;
+  border-radius: var(--border-radius-lg);
+  background-color: #fff;
+  border: 1px solid var(--color-border);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+  display: none;
+  z-index: 50;
+  background-repeat: no-repeat;
+}
+
+/* Show zoom panel and lens on hover via JS class */
+.carousel-main.is-zooming .zoom-lens,
+.carousel-main.is-zooming .zoom-preview {
+  display: block;
+}
+
+@media (max-width: 1080px) {
+  /* Disable zoom preview on mobile/tablet or reposition */
+  .zoom-preview {
+    display: none !important;
+  }
+  .zoom-lens {
+    display: none !important;
+  }
+}
+
+/* Arrows */
+.carousel-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: var(--color-white);
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  cursor: pointer;
+  z-index: 10;
+}
+
+.carousel-arrow.prev { left: var(--space-sm); }
+.carousel-arrow.next { right: var(--space-sm); }
+
+/* Thumbnails */
+.carousel-thumbs {
+  display: flex;
+  gap: var(--space-sm);
+  overflow-x: auto;
+}
+
+.carousel-thumb {
+  width: 80px;
+  height: 80px;
+  border-radius: var(--border-radius-sm);
+  cursor: pointer;
+  border: 2px solid transparent;
+  object-fit: cover;
+}
+
+.carousel-thumb.active {
+  border-color: var(--color-accent);
+}
+
+/* Product Info (Right Side) */
+.product-info {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+}
+
+.badges {
+  display: flex;
+  gap: var(--space-sm);
+}
+
+.badge {
+  font-size: 12px;
+  background: var(--color-light-bg);
+  border: 1px solid var(--color-border);
+  padding: 4px 8px;
+  border-radius: var(--border-radius-sm);
+}
+
+.product-features {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+}
+
+.product-features li {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  color: var(--color-secondary);
+}
+
+.product-features li::before {
+  content: '•';
+  color: var(--color-accent);
+  font-size: 20px;
+}
+
+/* Price Box */
+.price-box {
+  background: var(--color-light-bg);
+  padding: var(--space-lg);
+  border-radius: var(--border-radius-md);
+  margin-top: var(--space-md);
+}
+
+.price-target {
+  font-size: 32px;
+  font-weight: 700;
+  font-family: var(--font-primary);
+  margin-bottom: var(--space-sm);
+}
+
+.price-tags {
+  display: flex;
+  gap: var(--space-sm);
+  flex-wrap: wrap;
+}
+
+.tag {
+  background: #fef08a; /* yellow-ish */
+  color: #854d0e;
+  font-size: 12px;
+  padding: 4px 8px;
+  border-radius: var(--border-radius-sm);
+}
+
+.product-actions {
+  display: flex;
+  gap: var(--space-md);
+  margin-top: var(--space-lg);
+}
+
+@media (max-width: 480px) {
+  .product-actions {
+    flex-direction: column;
+  }
+}

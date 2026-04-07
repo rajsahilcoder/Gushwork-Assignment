@@ -1,22 +1,25 @@
-/* Root Variables for overall design consistency */
-:root {
-    --primary-color: #000;
-    --background-color: #fff;
-    --text-color: #333;
-}
+/* 
+  Main Stylesheet 
+  Imports all modular components to adhere to SOLID principles and keep file sizes small.
+*/
 
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: var(--background-color);
-    color: var(--text-color);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-}
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Urbanist:wght@400;600;700;800&display=swap');
 
-h1 {
-    color: var(--primary-color);
-}
+@import url('./styles/variables.css');
+@import url('./styles/global.css');
+@import url('./styles/header.css');
+@import url('./styles/hero-carousel.css');
+@import url('./styles/footer.css');
+
+/* Components */
+@import url('./styles/components/shared.css');
+@import url('./styles/components/partners.css');
+@import url('./styles/components/specs.css');
+@import url('./styles/components/features.css');
+@import url('./styles/components/industries.css');
+@import url('./styles/components/manufacturing.css');
+@import url('./styles/components/testimonials.css');
+@import url('./styles/components/portfolio.css');
+@import url('./styles/components/resources.css');
+@import url('./styles/components/faq.css');
+@import url('./styles/components/cta.css');

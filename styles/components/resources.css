@@ -1,0 +1,30 @@
+/* Resources */
+.resources-list {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.resource-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--space-md) var(--space-lg);
+  border: 1px solid var(--color-border);
+  margin-bottom: var(--space-sm);
+  border-radius: var(--border-radius-md);
+  background: var(--color-white);
+}
+
+.resource-item:hover {
+  border-color: var(--color-accent);
+}
+
+.resource-name {
+  font-weight: 500;
+}
+
+.download-link {
+  color: var(--color-accent);
+  font-weight: 600;
+  font-size: 14px;
+}

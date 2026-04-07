@@ -1,0 +1,38 @@
+/* CTA Section */
+.cta-section {
+  background-color: var(--color-accent);
+  color: var(--color-white);
+  border-radius: var(--border-radius-lg);
+  padding: var(--space-3xl);
+  display: flex;
+  gap: var(--space-2xl);
+  margin-top: var(--space-2xl);
+}
+
+@media (max-width: 1080px) {
+  .cta-section { flex-direction: column; padding: var(--space-xl); }
+}
+
+.cta-form {
+  background: var(--color-white);
+  border-radius: var(--border-radius-md);
+  padding: var(--space-lg);
+  color: var(--color-secondary);
+  flex-grow: 1;
+}
+
+.form-group {
+  margin-bottom: var(--space-md);
+}
+
+.form-group input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid var(--color-border);
+  border-radius: var(--border-radius-sm);
+}
+
+.form-group input:focus {
+  outline: none;
+  border-color: var(--color-accent);
+}

@@ -1,0 +1,38 @@
+:root {
+  /* Typography */
+  --font-primary: 'Urbanist', sans-serif;
+  --font-secondary: 'Inter', sans-serif;
+
+  /* Colors */
+  --color-primary: #111827; /* Dark Navy/Black for Headings */
+  --color-secondary: #0D0D0D; /* Text Black */
+  --color-accent: #2e4392; /* Blue for buttons */
+  --color-accent-hover: #1e2c66; /* Dark Blue Hover */
+  --color-light-bg: #f9fafc; /* Light Grey Sections */
+  --color-white: #ffffff;
+  --color-border: #e5e7eb;
+  --color-border-dark: #d1d5db;
+  --color-text-muted: #6b7280;
+
+  /* Spacing (Using Multiples of 8 based on Spacing/100, 80 etc) */
+  --space-sm: 8px;
+  --space-md: 16px;
+  --space-lg: 32px;
+  --space-xl: 48px;
+  --space-2xl: 80px;
+  --space-3xl: 100px;
+  
+  /* Radii */
+  --border-radius-sm: 4px;
+  --border-radius-md: 8px;
+  --border-radius-lg: 12px;
+  --border-radius-full: 9999px;
+
+  /* Breakpoints Max-Width Containers */
+  --container-max: 1600px;
+  --container-lg: 1440px;
+  --container-md: 1200px;
+  --container-sm: 1080px;
+  --container-xs: 800px;
+  --container-xxs: 360px;
+}

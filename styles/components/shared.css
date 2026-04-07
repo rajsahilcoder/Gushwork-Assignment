@@ -1,0 +1,20 @@
+/* Shared Section Styling */
+.section-header {
+  text-align: center;
+  margin-bottom: var(--space-2xl);
+}
+
+.section-header p {
+  color: var(--color-text-muted);
+  max-width: 600px;
+  margin: var(--space-sm) auto 0;
+}
+
+.bg-dark {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+}
+
+.bg-light {
+    background-color: var(--color-light-bg);
+}
