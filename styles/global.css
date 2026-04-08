@@ -102,12 +102,14 @@ a {
 
 /* Section Spacing */
 .section-padding {
-  padding: var(--space-3xl) 0;
+  padding-top: var(--space-3xl);
+  padding-bottom: var(--space-3xl);
 }
 
 @media (max-width: 800px) {
   .section-padding {
-    padding: var(--space-xl) 0;
+    padding-top: var(--space-xl);
+    padding-bottom: var(--space-xl);
   }
 }
 
