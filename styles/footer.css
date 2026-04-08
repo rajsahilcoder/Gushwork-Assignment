@@ -1,58 +1,104 @@
-/* Footer */
+/* Footer Styles */
 .site-footer {
   background-color: var(--color-white);
+  padding-top: 60px;
   border-top: 1px solid var(--color-border);
-  padding-top: var(--space-3xl);
 }
 
-.footer-top {
+.footer-banner {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: var(--space-2xl);
+  background: var(--color-white);
+  padding: 30px 40px;
+  border: 1px solid #e5e7eb;
+  border-radius: 15px;
+  margin-bottom: 60px;
 }
 
-.footer-top p {
-  color: var(--color-text-muted);
+.footer-banner-logo img {
+  height: 48px;
+}
+
+.footer-banner-text {
+  text-align: right;
+  font-size: 20px;
   font-weight: 500;
+  color: #111827;
+  line-height: 1.2;
+}
+
+.footer-banner-text .highlight {
+  color: var(--color-accent);
+  font-weight: 700;
+}
+
+.footer-banner-text .manufacturer {
+  color: var(--color-accent);
 }
 
 .footer-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: var(--space-xl);
-  margin-bottom: var(--space-2xl);
-}
-
-@media (max-width: 1080px) {
-  .footer-grid { grid-template-columns: repeat(2, 1fr); }
-}
-
-@media (max-width: 600px) {
-  .footer-grid { grid-template-columns: 1fr; }
+  gap: 40px;
+  margin-bottom: 60px;
 }
 
 .footer-column h4 {
-  margin-bottom: var(--space-md);
-  font-family: var(--font-secondary);
-  font-size: 16px;
-  color: var(--color-primary);
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 24px;
+  color: #111827;
 }
 
 .footer-column ul {
   list-style: none;
-  display: flex;
-  flex-direction: column;
-  gap: var(--space-sm);
+  padding: 0;
 }
 
-.footer-column a, .footer-column p {
-  color: var(--color-text-muted);
+.footer-column ul li {
+  margin-bottom: 12px;
+}
+
+.footer-column ul li a {
   font-size: 14px;
+  color: #4b5563;
+  text-decoration: none;
+  transition: color 0.2s;
 }
 
-.footer-column a:hover {
+.footer-column ul li a:hover {
   color: var(--color-accent);
+}
+
+.contact-item {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 16px;
+  font-size: 14px;
+  color: #4b5563;
+}
+
+.contact-item .icon {
+  font-size: 16px;
+  color: var(--color-accent);
+}
+
+.social-links {
+  display: flex;
+  gap: 15px;
+  margin-top: 24px;
+}
+
+.social-icon {
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  color: #4b5563;
+  text-decoration: none;
 }
 
 .footer-bottom {

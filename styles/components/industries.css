@@ -1,22 +1,21 @@
-/* Industry Grid */
+/* Industries Section */
+.industries-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 40px;
+}
+
+.header-nav {
+  display: flex;
+  gap: 15px;
+}
+
 .industry-grid {
   display: grid;
-  grid-template-columns: repeat(4, minmax(300px, 1fr));
-  gap: var(--space-md);
-  margin-top: var(--space-lg);
-  overflow-x: auto;
-  scroll-snap-type: x mandatory;
-  padding-bottom: var(--space-md);
-  -ms-overflow-style: none; /* Hide scrollbar IE/Edge */
-  scrollbar-width: none; /* Hide scrollbar Firefox */
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
 }
-
-.industry-grid::-webkit-scrollbar {
-  display: none; /* Hide scrollbar Chrome/Safari */
-}
-
-@media (max-width: 1080px) { .industry-grid { grid-template-columns: repeat(2, 1fr); } }
-@media (max-width: 600px) { .industry-grid { grid-template-columns: 1fr; } }
 
 .industry-card {
   position: relative;
