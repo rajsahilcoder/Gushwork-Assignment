@@ -245,16 +245,16 @@
 
 /* Price Box */
 .price-box {
-  background: #FFFBEB;
+  background: white;
   padding: 24px;
   border-radius: 12px;
   margin-top: 20px;
-  border: 1px solid #FEF3C7;
+  border: 1px solid #e5e7eb;
 }
 
 .price-label {
   font-size: 14px;
-  color: #92400E;
+  color: #6b7280;
   margin-bottom: 8px;
 }
 
@@ -295,12 +295,14 @@
 }
 
 .price-certifications {
-  font-size: 14px;
-  color: #4b5563;
-  font-weight: 600;
-  margin-top: 20px;
-  padding-top: 16px;
-  border-top: 1px solid #FDE68A;
+  font-size: 13px;
+  color: #111827;
+  font-weight: 500;
+  margin-top: 0;
+  padding: 10px 16px;
+  background: #f3f4f6;
+  border-radius: 8px;
+  display: inline-block;
 }
 
 .product-actions {
