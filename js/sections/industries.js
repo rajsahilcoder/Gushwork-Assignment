@@ -15,28 +15,28 @@ window.industriesSection = `
         <div class="industry-grid">
             <div class="industry-card">
                 <img src="assets/main_img.jpg" alt="Fishnet Manufacturing">
-                <div class="industry-overlay">
+                <div class="industry-info">
                     <h3>Fishnet Manufacturing</h3>
                     <p>High-performance twisting solutions for packaging yarn, strapping materials, and reinforcement threads used in modern packaging applications.</p>
                 </div>
             </div>
             <div class="industry-card">
                 <img src="assets/main_img.jpg" alt="Fishnet Manufacturing">
-                <div class="industry-overlay">
+                <div class="industry-info">
                     <h3>Fishnet Manufacturing</h3>
                     <p>High-performance twisting solutions for packaging yarn, strapping materials, and reinforcement threads used in modern packaging applications.</p>
                 </div>
             </div>
             <div class="industry-card">
                 <img src="assets/main_img.jpg" alt="Fishnet Manufacturing">
-                <div class="industry-overlay">
+                <div class="industry-info">
                     <h3>Fishnet Manufacturing</h3>
                     <p>High-performance twisting solutions for packaging yarn, strapping materials, and reinforcement threads used in modern packaging applications.</p>
                 </div>
             </div>
             <div class="industry-card">
                 <img src="assets/main_img.jpg" alt="Fishnet Manufacturing">
-                <div class="industry-overlay">
+                <div class="industry-info">
                     <h3>Fishnet Manufacturing</h3>
                     <p>High-performance twisting solutions for packaging yarn, strapping materials, and reinforcement threads used in modern packaging applications.</p>
                 </div>
@@ -44,4 +44,3 @@ window.industriesSection = `
         </div>
     </section>
 `;
-
