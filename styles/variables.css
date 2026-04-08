@@ -36,4 +36,7 @@
   --container-sm: 1080px;
   --container-xs: 800px;
   --container-xxs: 360px;
+
+  /* Container Padding */
+  --container-padding: 24px;
 }

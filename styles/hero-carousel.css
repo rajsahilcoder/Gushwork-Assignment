@@ -5,6 +5,12 @@
   font-size: 14px;
 }
 
+@media (max-width: 768px) {
+  .breadcrumb {
+    padding: 100px 0 10px;
+  }
+}
+
 /* Hero Section Layout */
 .hero-section {
   display: grid;
@@ -13,9 +19,16 @@
   align-items: flex-start;
 }
 
-@media (max-width: 1080px) {
+@media (max-width: 1250px) {
+  .hero-section {
+    gap: var(--space-lg);
+  }
+}
+
+@media (max-width: 1024px) {
   .hero-section {
     grid-template-columns: 1fr;
+    gap: var(--space-xl);
   }
 }
 
@@ -171,6 +184,7 @@
 .badges {
   display: flex;
   gap: var(--space-sm);
+  flex-wrap: wrap;
 }
 
 .badge {
@@ -249,6 +263,12 @@
   font-weight: 700;
   margin-bottom: 16px;
   color: #111827;
+}
+
+@media (max-width: 768px) {
+  .price-target {
+    font-size: 28px;
+  }
 }
 
 .price-tags {

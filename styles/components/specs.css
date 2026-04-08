@@ -16,7 +16,7 @@
 .specs-table-container {
     background: #1F2937;
     border-radius: var(--border-radius-lg);
-    overflow: hidden;
+    overflow-x: auto;
     margin-top: var(--space-xl);
     border: 1px solid rgba(255, 255, 255, 0.05);
 }

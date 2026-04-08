@@ -72,9 +72,8 @@ a {
 .container {
   width: 100%;
   max-width: var(--container-lg);
-  /* 1440px */
   margin: 0 auto;
-  padding: 0 var(--space-md);
+  padding: 0 var(--container-padding);
 }
 
 @media (max-width: 1680px) {
@@ -83,21 +82,22 @@ a {
   }
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1250px) {
   .container {
     max-width: var(--container-sm);
   }
 }
 
-@media (max-width: 1080px) {
+@media (max-width: 1024px) {
   .container {
-    max-width: var(--container-xs);
+    max-width: 100%;
+    padding: 0 var(--container-padding);
   }
 }
 
-@media (max-width: 800px) {
-  .container {
-    max-width: var(--container-xxs);
+@media (max-width: 768px) {
+  :root {
+    --container-padding: 16px;
   }
 }
 
