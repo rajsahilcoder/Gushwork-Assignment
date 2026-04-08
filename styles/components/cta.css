@@ -99,8 +99,10 @@
 }
 
 .country-code .chevron {
-  font-size: 10px;
+  width: 24px;
+  height: 24px;
   color: #6b7280;
+  display: block;
 }
 
 .btn-dark-cta {

@@ -19,7 +19,7 @@ window.ctaSection = `
                     <div class="form-group phone-input-group">
                         <div class="country-code">
                             <span>+91</span>
-                            <span class="chevron">⌄</span>
+                            <svg class="chevron" xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
                         </div>
                         <input type="tel" placeholder="7003026616">
                     </div>
