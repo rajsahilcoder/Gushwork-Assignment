@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Urbanist:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap");
 
 /* Reset & Global */
 * {
@@ -11,7 +11,8 @@ body {
   font-family: var(--font-secondary);
   color: var(--color-secondary);
   line-height: 1.5;
-  background-color: #F3F4F6; /* Slightly grey background for the body to show the page shadow */
+  background-color: #fcfcfc;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.04'/%3E%3C/svg%3E");
   overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
   scroll-behavior: smooth;
@@ -19,10 +20,8 @@ body {
 
 .page-container {
   width: 100%;
-  max-width: var(--container-lg);
   margin: 0 auto;
-  background-color: var(--color-white);
-  box-shadow: 0px 16px 32px -12px #585C5F1A;
+  background-color: transparent;
 }
 
 h1,
@@ -128,7 +127,7 @@ a {
 }
 
 .btn-primary {
-  background: #2B3990;
+  background: #2b3990;
   color: var(--color-white);
   box-shadow: 0 4px 14px rgba(46, 67, 146, 0.3);
 }
@@ -195,7 +194,7 @@ a {
   to {
     opacity: 1;
     transform: translateY(0);
-}
+  }
 }
 
 /* Shared Typography */
