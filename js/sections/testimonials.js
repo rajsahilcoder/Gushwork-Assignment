@@ -9,12 +9,9 @@ window.testimonialsSection = `
         <div class="testimonials-grid">
             <div class="testimonial-card">
                 <div class="testimonial-quote-icon">
-                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M14.017 21L14.017 18C14.017 16.8954 14.9124 16 16.017 16H19.017C20.1216 16 21.017 16.8954 21.017 18V21C21.017 22.1046 20.1216 23 19.017 23H16.017C14.9124 23 14.017 22.1046 14.017 21Z" fill="#2E4392" fill-opacity="0.1"/>
-                        <path d="M14.017 21L14.017 18C14.017 16.8954 14.9124 16 16.017 16H19.017C20.1216 16 21.017 16.8954 21.017 18V21C21.017 22.1046 20.1216 23 19.017 23H16.017C14.9124 23 14.017 22.1046 14.017 21Z" stroke="#2E4392" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                        <path d="M3 21L3 18C3 16.8954 3.89543 16 5 16H8C9.10457 16 10 16.8954 10 18V21C10 22.1046 9.10457 23 8 23H5C3.89543 23 3 22.1046 3 21Z" fill="#2E4392" fill-opacity="0.1"/>
-                        <path d="M3 21L3 18C3 16.8954 3.89543 16 5 16H8C9.10457 16 10 16.8954 10 18V21C10 22.1046 9.10457 23 8 23H5C3.89543 23 3 22.1046 3 21Z" stroke="#2E4392" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                        <path d="M7 16V9C7 5.13401 10.134 2 14 2" stroke="#2E4392" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <svg width="28" height="20" viewBox="0 0 25 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M10.2105 0H6.52632L3 18H6.68421L10.2105 0Z" fill="#2b3990"/>
+                        <path d="M21.5789 0H17.8947L14.3684 18H18.0526L21.5789 0Z" fill="#2b3990"/>
                     </svg>
                 </div>
                 <h4 class="testimonial-summary">Excellent support for specialized applications.</h4>
@@ -29,12 +26,9 @@ window.testimonialsSection = `
             </div>
             <div class="testimonial-card">
                 <div class="testimonial-quote-icon">
-                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M14.017 21L14.017 18C14.017 16.8954 14.9124 16 16.017 16H19.017C20.1216 16 21.017 16.8954 21.017 18V21C21.017 22.1046 20.1216 23 19.017 23H16.017C14.9124 23 14.017 22.1046 14.017 21Z" fill="#2E4392" fill-opacity="0.1"/>
-                        <path d="M14.017 21L14.017 18C14.017 16.8954 14.9124 16 16.017 16H19.017C20.1216 16 21.017 16.8954 21.017 18V21C21.017 22.1046 20.1216 23 19.017 23H16.017C14.9124 23 14.017 22.1046 14.017 21Z" stroke="#2E4392" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                        <path d="M3 21L3 18C3 16.8954 3.89543 16 5 16H8C9.10457 16 10 16.8954 10 18V21C10 22.1046 9.10457 23 8 23H5C3.89543 23 3 22.1046 3 21Z" fill="#2E4392" fill-opacity="0.1"/>
-                        <path d="M3 21L3 18C3 16.8954 3.89543 16 5 16H8C9.10457 16 10 16.8954 10 18V21C10 22.1046 9.10457 23 8 23H5C3.89543 23 3 22.1046 3 21Z" stroke="#2E4392" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                        <path d="M7 16V9C7 5.13401 10.134 2 14 2" stroke="#2E4392" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <svg width="28" height="20" viewBox="0 0 25 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M10.2105 0H6.52632L3 18H6.68421L10.2105 0Z" fill="#2b3990"/>
+                        <path d="M21.5789 0H17.8947L14.3684 18H18.0526L21.5789 0Z" fill="#2b3990"/>
                     </svg>
                 </div>
                 <h4 class="testimonial-summary">Excellent support for specialized applications.</h4>
@@ -49,12 +43,9 @@ window.testimonialsSection = `
             </div>
             <div class="testimonial-card">
                 <div class="testimonial-quote-icon">
-                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M14.017 21L14.017 18C14.017 16.8954 14.9124 16 16.017 16H19.017C20.1216 16 21.017 16.8954 21.017 18V21C21.017 22.1046 20.1216 23 19.017 23H16.017C14.9124 23 14.017 22.1046 14.017 21Z" fill="#2E4392" fill-opacity="0.1"/>
-                        <path d="M14.017 21L14.017 18C14.017 16.8954 14.9124 16 16.017 16H19.017C20.1216 16 21.017 16.8954 21.017 18V21C21.017 22.1046 20.1216 23 19.017 23H16.017C14.9124 23 14.017 22.1046 14.017 21Z" stroke="#2E4392" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                        <path d="M3 21L3 18C3 16.8954 3.89543 16 5 16H8C9.10457 16 10 16.8954 10 18V21C10 22.1046 9.10457 23 8 23H5C3.89543 23 3 22.1046 3 21Z" fill="#2E4392" fill-opacity="0.1"/>
-                        <path d="M3 21L3 18C3 16.8954 3.89543 16 5 16H8C9.10457 16 10 16.8954 10 18V21C10 22.1046 9.10457 23 8 23H5C3.89543 23 3 22.1046 3 21Z" stroke="#2E4392" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                        <path d="M7 16V9C7 5.13401 10.134 2 14 2" stroke="#2E4392" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <svg width="28" height="20" viewBox="0 0 25 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M10.2105 0H6.52632L3 18H6.68421L10.2105 0Z" fill="#2b3990"/>
+                        <path d="M21.5789 0H17.8947L14.3684 18H18.0526L21.5789 0Z" fill="#2b3990"/>
                     </svg>
                 </div>
                 <h4 class="testimonial-summary">Provides the exact specifications we need!</h4>
