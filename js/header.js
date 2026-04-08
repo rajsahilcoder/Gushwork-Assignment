@@ -45,6 +45,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const isActive = mobileBtn.classList.toggle('is-active');
             mainNav.classList.toggle('is-active');
             overlay.classList.toggle('is-active');
+            header.classList.toggle('menu-open');
             
             // Lock/Unlock body scroll
             if (isActive) {

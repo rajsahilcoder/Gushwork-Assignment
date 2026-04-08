@@ -22,6 +22,11 @@
   /* Show when scrolling up */
 }
 
+.site-header.menu-open {
+  transform: none !important;
+  z-index: 1100;
+}
+
 /* Header Container */
 .header-container {
   display: flex;
@@ -105,20 +110,22 @@
   .main-nav {
     position: fixed;
     top: 0;
-    right: -100%;
-    width: 100%;
+    left: 0;
+    width: 100vw;
     height: 100vh;
     background-color: var(--color-white);
-    padding: 100px 40px;
+    padding: 100px 32px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    transform: translateX(100%);
     transition: 0.5s cubic-bezier(0.16, 1, 0.3, 1);
-    z-index: 1000;
+    z-index: 1050;
+    overflow-y: auto;
   }
 
   .main-nav.is-active {
-    right: 0;
+    transform: translateX(0);
   }
 
   .main-nav ul {
