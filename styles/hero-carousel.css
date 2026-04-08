@@ -278,6 +278,13 @@
   margin-bottom: 20px;
 }
 
+@media (max-width: 480px) {
+  .price-tags {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
 .price-box .tag {
   background: #FEF3C7;
   color: #92400E;
