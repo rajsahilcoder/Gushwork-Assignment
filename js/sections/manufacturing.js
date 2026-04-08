@@ -3,7 +3,7 @@ window.manufacturingSection = `
     <section class="bg-light section-padding">
         <div class="container">
             <div class="section-header text-center">
-                <h2 class="title-xl">Advanced HDPE Pipe Manufacturing Process</h2>
+                <h2 class="title-xl">Advanced HDPE Pipe Manufacturing <br> Process</h2>
                 <p class="section-subtitle">Our state-of-the-art extrusion technology ensures consistent quality, optimal material properties, and dimensional accuracy in every pipe we manufacture.</p>
             </div>
 
@@ -26,9 +26,9 @@ window.manufacturingSection = `
                         <div class="tab-text-content">
                             <h3 class="tab-title">High-Grade Raw Material Selection</h3>
                             <p class="tab-description">Vacuum sizing tanks ensure precise outer diameter while internal pressure maintains perfect roundness and wall thickness uniformity.</p>
-                            <ul class="checkmark-list">
-                                <li><span class="icon">✓</span> PE100 grade material</li>
-                                <li><span class="icon">✓</span> Optimal molecular weight distribution</li>
+                            <ul class="dot-list">
+                                <li><span class="dot"></span> PE100 grade material</li>
+                                <li><span class="dot"></span> Optimal molecular weight distribution</li>
                             </ul>
                         </div>
                         <div class="tab-image-container">

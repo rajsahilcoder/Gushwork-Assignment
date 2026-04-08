@@ -1,6 +1,6 @@
 /* CTA Section */
 .cta-section {
-  background-color: var(--color-accent);
+  background-color: #2B3990;
   color: var(--color-white);
   border-radius: 20px;
   padding: 60px;
@@ -121,13 +121,21 @@
 }
 
 @media (max-width: 1080px) {
-  .cta-section { 
-    flex-direction: column; 
-    padding: var(--space-xl); 
+  .cta-section {
+    flex-direction: column;
+    padding: var(--space-xl);
     text-align: center;
   }
-  .cta-title { font-size: 32px; }
-  .cta-divider { margin: var(--space-md) 0; }
-  .cta-form-container { width: 100%; }
-}
 
+  .cta-title {
+    font-size: 32px;
+  }
+
+  .cta-divider {
+    margin: var(--space-md) 0;
+  }
+
+  .cta-form-container {
+    width: 100%;
+  }
+}

@@ -5,11 +5,12 @@
 }
 
 .faq-item {
-  background: var(--color-white);
+  background: white;
   border: 1px solid #e5e7eb;
   border-radius: 12px;
   margin-bottom: 16px;
   transition: all 0.3s ease;
+  overflow: hidden;
 }
 
 .faq-header {
@@ -23,48 +24,56 @@
   font-size: 18px;
 }
 
+.faq-item.active {
+  border-color: #2b3990;
+}
+
+.faq-item.active .faq-header {
+  color: #2b3990;
+}
+
 .faq-content {
   max-height: 0;
   overflow: hidden;
-  transition: max-height 0.4s cubic-bezier(0, 1, 0, 1);
+  transition: max-height 0.3s ease-out;
   padding: 0 32px;
-  color: #4b5563;
-  line-height: 1.6;
+  background: #fcfcfc;
 }
 
 .faq-item.active .faq-content {
-  max-height: 1000px;
-  transition: max-height 0.4s ease-in-out;
+  max-height: 200px;
+  padding: 10px 32px 30px;
 }
 
 .faq-icon {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 32px;
-  height: 32px;
+  width: 28px;
+  height: 28px;
   border-radius: 50%;
   background: #f3f4f6;
   color: #6b7280;
-  transition: all 0.3s ease;
+  transition: all 0.2s;
 }
 
 .faq-item.active .faq-icon {
-  background: #f3f4ff;
-  color: #2e4392;
+  background: #2b3990;
+  color: white;
+  transform: rotate(180deg);
 }
 
-/* Catalogue Box */
+/* Catalogue Box Refinement */
 .catalogue-box {
-  max-width: 1080px;
-  margin: 0 auto;
-  background-color: #f9fafb;
-  padding: 40px;
+  max-width: 900px;
+  margin: 80px auto 0;
+  background-color: white;
+  padding: 30px 40px;
   border-radius: 12px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border: 1px solid #f3f4f6;
+  border: 1px solid #e5e7eb;
 }
 
 .catalogue-info h4 {

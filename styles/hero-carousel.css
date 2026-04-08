@@ -1,7 +1,6 @@
 /* Breadcrumb */
 .breadcrumb {
-  padding: 100px 0 var(--space-md);
-  /* Account for absolute header */
+  padding: 120px 0 20px;
   color: var(--color-text-muted);
   font-size: 14px;
 }
@@ -178,13 +177,13 @@
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  font-size: 14px;
-  font-weight: 500;
-  color: var(--color-secondary);
-  background: var(--color-light-bg);
-  border: 1px solid var(--color-border);
-  padding: 6px 12px;
-  border-radius: var(--border-radius-sm);
+  font-size: 13px;
+  font-weight: 600;
+  color: #4b5563;
+  background: white;
+  border: 1px solid #e5e7eb;
+  padding: 8px 16px;
+  border-radius: 30px;
 }
 
 .badge img {
@@ -232,53 +231,49 @@
 
 /* Price Box */
 .price-box {
-  background: var(--color-white);
-  padding: var(--space-lg);
-  border-radius: var(--border-radius-md);
-  margin-top: var(--space-md);
-  border: 1px solid #E1E3E8;
-  box-shadow: 0px 16px 32px -12px #585C5F1A;
+  background: #FFFBEB;
+  padding: 24px;
+  border-radius: 12px;
+  margin-top: 20px;
+  border: 1px solid #FEF3C7;
 }
 
 .price-label {
   font-size: 14px;
-  color: var(--color-text-muted);
-  margin-bottom: var(--space-xs);
+  color: #92400E;
+  margin-bottom: 8px;
 }
 
 .price-target {
-  font-size: 28px;
+  font-size: 32px;
   font-weight: 700;
-  font-family: var(--font-primary);
-  margin-bottom: var(--space-md);
-  color: var(--color-primary);
+  margin-bottom: 16px;
+  color: #111827;
 }
 
 .price-tags {
   display: flex;
-  gap: var(--space-sm);
+  gap: 12px;
   flex-wrap: wrap;
-  margin-bottom: var(--space-md);
+  margin-bottom: 20px;
 }
 
 .price-box .tag {
-  background: #FFF8E7;
-  /* Light orange */
-  color: #D97706;
-  /* Darker orange */
+  background: #FEF3C7;
+  color: #92400E;
   font-size: 13px;
-  font-weight: 500;
-  padding: 6px 12px;
-  border-radius: var(--border-radius-sm);
+  font-weight: 600;
+  padding: 6px 14px;
+  border-radius: 6px;
 }
 
 .price-certifications {
   font-size: 14px;
-  color: var(--color-primary);
-  font-weight: 500;
-  margin-top: var(--space-md);
-  padding-top: var(--space-md);
-  border-top: 1px solid #F3F4F6;
+  color: #4b5563;
+  font-weight: 600;
+  margin-top: 20px;
+  padding-top: 16px;
+  border-top: 1px solid #FDE68A;
 }
 
 .product-actions {
